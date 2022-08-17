@@ -229,8 +229,16 @@ td, th {
 .itens:before {
     content: "⚝";
 }
+
 .imagembeneficios {
     width: 60%;
+    opacity: 1;
+    transition: 400ms;
+    box-shadow: 10px 10px 5px #000000;
+}
+
+.imagembeneficios:hover {
+    opacity: 0.3;
 }
 
 .video {
