@@ -103,6 +103,12 @@ body {
 
 .principal {
     padding: 1.5em;
+    display: grid;
+    gap: 16px;
+}
+
+.cartao--destaque {
+    margin-bottom: 16px;
 }
 
 .titulo-pagina {
@@ -110,6 +116,10 @@ body {
     font-weight: 700;
 }
 
+.titulo-secao {
+    font-size: 1.2em;
+    font-weight: 700;
+}
 .cartao {
     width: 100%;
     border-radius: 15px;
@@ -120,7 +130,8 @@ body {
 .cartao__conteudo {
     padding: 16px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto 1fr;
+    gap: 8px;
 }
 
 .cartao__destaque {
@@ -163,6 +174,7 @@ body {
     height: 40px;
     border-radius: 10px;
     font-size: 0.9em;
+    justify-self: flex-end;
 }
 
 .cartao__botao--play::before {
@@ -179,3 +191,7 @@ body {
     margin-right: 8px;
 }
 
+.secao {
+    display: grid;
+    gap: 16px; 
+}
