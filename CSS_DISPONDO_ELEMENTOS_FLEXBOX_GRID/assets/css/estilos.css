@@ -79,7 +79,7 @@ body {
         display: block;
         width: 32px;
         height: 32px;
-        background-image: url(../img/produto_1.png);
+        background-image: url(../img/profile_1.png);
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
@@ -90,9 +90,7 @@ body {
         color: #FFFFFF;
         font-size: 1.5em;
     }
-
 }
-
 
 .menu-lateral {
     display: flex;
@@ -124,6 +122,12 @@ body {
     align-items: center;
 }
 
+.menu-lateral_link--ativo {
+    color: #FFFFFF;
+    padding-left: 56px;
+    border-left: 8px solid #FFFFFF;
+}
+
 .menu-lateral_link::before {
     content: "\e900";
     width: 24px;
@@ -131,12 +135,6 @@ body {
     font-size: 24px;
     position: absolute;
     left: 24px;
-}
-
-.menu-lateral_link--ativo {
-    color: #FFFFFF;
-    padding-left: 56px;
-    border-left: 8px solid #FFFFFF;
 }
 
 .menu-lateral_link--inicio::before {
@@ -187,6 +185,11 @@ body {
     font-weight: 700;
 }
 
+.titulo-pagina {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
 .titulo-secao {
     font-size: 1.2em;
     font-weight: 700;
@@ -202,11 +205,16 @@ body {
 
     }
 }
+
 .cartao {
     width: 100%;
     border-radius: 15px;
     overflow: hidden;
     background-color: #2C343A;
+}
+
+.cartao--destaque {
+    margin-bottom: 16px;
 }
 
 .cartao__conteudo {
@@ -222,6 +230,7 @@ body {
  
 .cartao__titulo {
     font-size: 1.2em;
+    font-weight: 700;
     grid-column: span 2;
 }
 
@@ -255,7 +264,7 @@ body {
     width: 40px;
     height: 40px;
     border-radius: 10px;
-    font-size: 0.9em;
+    font-size: 0.9rem;
     justify-self: flex-end;
 }
 
