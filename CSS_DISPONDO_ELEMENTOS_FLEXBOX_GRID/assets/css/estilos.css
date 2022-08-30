@@ -43,7 +43,7 @@ body {
     display: none;
 }
 
-@media screen and (min-width:1366px) {
+@media screen and (min-width: 1366px) {
     .cabecalho {
         background-color: #1D232A;
         display: grid;
@@ -215,6 +215,15 @@ body {
         grid-column: 2;
     }
 
+    .principal--artigos {
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        grid-template-areas: 
+            "artigos-destaque artigos-destaque outros-artigos"
+            "secao-artigos secao-artigos outros-artigos"
+        ;
+    }
+
     .titulo-secao {
         grid-column: span 4;
     }
@@ -262,6 +271,12 @@ body {
     grid-column: span 2;
 }
 
+h4 .cartao__titulo {
+    font-size: 18px;
+    line-height: 24px;
+    align-self: left;
+}
+
 .cartao__perfil {
     color: #95999C;
     font-size: 0.9em;
@@ -299,6 +314,25 @@ body {
     width: 100%;
     border-radius: 16px;
     grid-column: span 2;
+}
+
+.cartao__info--usuario {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 8px;
+    align-items: center;
+    justify-self: flex-end;
+}
+
+.cartao__info--usuario::before {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-image: url(../img/profile_2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .cartao__botao{
@@ -341,10 +375,18 @@ body {
     display: none;
 }
 
+.outros-artigos {
+    display: none;
+}
+
 @media screen and (min-width: 1336px){
     
     .cartao--destaque {
         margin-bottom: 0;
+    }
+
+    .outros-artigos .cartao--destaque , .outros-artigos h3 {
+        margin-bottom: 16px;
     }
 
     .cartao__imagem--mobile {
@@ -352,6 +394,10 @@ body {
     }
 
     .cartao__imagem--desktop {
+        display: block;
+    }
+
+    .outros-artigos {
         display: block;
     }
 
@@ -415,7 +461,7 @@ body {
     gap: 16px; 
 }
 
-@media screen and (min-width:1440px){
+@media screen and (min-width:1366px){
     .secao {
         grid-template-columns: repeat(4, 1fr);
     }
@@ -442,6 +488,18 @@ body {
     
     .secao-produtos {
         grid-area: secao-produtos;
+    }
+
+    .artigos-destaque {
+        grid-area: artigos-destaque;
+    }
+
+    .secao-artigos {
+        grid-area: secao-artigos;
+    }
+
+    .outros-artigos {
+        grid-area: outros-artigos;
     }
 }
 
