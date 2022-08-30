@@ -176,6 +176,10 @@ body {
     gap: 16px;
 }
 
+.principal--artigos {
+    padding: 16px;
+}
+
 .cartao--destaque {
     margin-bottom: 16px;
 }
@@ -221,6 +225,15 @@ body {
     border-radius: 15px;
     overflow: hidden;
     background-color: #2C343A;
+}
+
+.cartao__artigos {
+    width: 100%;
+    overflow: hidden;
+    background-color: #1D232A;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 20px;
 }
 
 .cartao__imagem--desktop {
@@ -274,6 +287,18 @@ body {
 .cartao__info--visualizacao::before {
     content: "\e90f";
     margin-right: 8px;
+}
+
+.cartao__info--texto {
+    grid-column: span 2;
+    line-height: 32px;
+    text-align: left;
+}
+
+.cartao__info--imagem {
+    width: 100%;
+    border-radius: 16px;
+    grid-column: span 2;
 }
 
 .cartao__botao{
