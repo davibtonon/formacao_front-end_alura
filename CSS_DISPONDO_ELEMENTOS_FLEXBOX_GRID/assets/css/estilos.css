@@ -277,6 +277,10 @@ h4 .cartao__titulo {
     align-self: left;
 }
 
+.cartao__titulo--principal {
+    font-size:  32px;
+}
+
 .cartao__perfil {
     color: #95999C;
     font-size: 0.9em;
@@ -333,6 +337,14 @@ h4 .cartao__titulo {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+.cartao__info--bloco--imagem {
+    grid-column: span 2;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 32px;
+    grid-template-rows: auto;
 }
 
 .cartao__botao{
