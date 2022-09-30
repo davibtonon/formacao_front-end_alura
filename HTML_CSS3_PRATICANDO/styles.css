@@ -142,6 +142,5 @@ body {
 .rodape__texto {
     margin: 1em 0;
     font-size: 14px;
-    text-align: center;
     color: var(--cinza-secundario)
 }
