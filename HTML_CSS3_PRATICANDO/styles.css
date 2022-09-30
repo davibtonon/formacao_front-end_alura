@@ -117,7 +117,8 @@ body {
     
 }
 .rodape {
-  padding: 30px;
+  text-align: center; 
+  margin: 5em 3em;
 }
 
 .rodape__logo {
@@ -135,11 +136,14 @@ body {
     color: var(--branco-principal);
     text-decoration: none;
     font-size: 1em;
-    margin: 0 0.5em;
+    /* margin: 0 0.5em;  minha solução */
+    /* Solução do estruto */
+    margin-left: 1em;
 }
 
 .rodape__texto {
-    margin: 1em 4em;
+    margin: 1em 0;
     font-size: 14px;
     text-align: center;
+    color: var(--cinza-secundario)
 }
