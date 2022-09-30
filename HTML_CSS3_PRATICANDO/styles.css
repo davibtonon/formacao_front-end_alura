@@ -136,8 +136,6 @@ body {
     color: var(--branco-principal);
     text-decoration: none;
     font-size: 1em;
-    /* margin: 0 0.5em;  minha solução */
-    /* Solução do estruto */
     margin-left: 1em;
 }
 
