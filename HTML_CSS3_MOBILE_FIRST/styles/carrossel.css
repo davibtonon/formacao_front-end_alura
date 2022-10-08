@@ -58,6 +58,7 @@
 
 .descricao__texto {
     font-size: 14px;
+    line-height: 21px;
 }
 
 .botoes__item {
@@ -70,4 +71,14 @@
     color: var(--branco);
     font-weight: 700;
     text-decoration: none;
+}
+
+.descricao__estrelas {
+    width: 91px;
+    height: 15px;
+    padding: 0.5em;
+    background-image: url("../img/Star.svg");
+    display: inline-block;
+    background-repeat: space no-repeat;
+    background-size: 20px auto;
 }
